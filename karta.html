@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта на сайта</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .map h2{
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            padding-top: 5vh;
+        }
+        .map h1{
+            font-size: 50px;
+            color: white;
+            padding-top: 5vh;
+            text-align: center;
+        }
+        .map p{
+            text-align: center;
+        }
+        .map a{
+            text-decoration: none;
+            font-size: 22px;
+            color: #d6d6d6;
+        }
+        .champions{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="left">
+                <div class="header__logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html" class="link">НАЧАЛО</a></li>
+                        
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">ШАМПИОНИ</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    
+                                  <a href="gukesh.html">
+                                    <img src="images/gukesh.jpg" alt="">
+                                    Гукеш Дамараджу</a>
+                                  <a href="ding.html">
+                                    <img src="images/Ding.webp" alt="">
+                                    Динг<br> Лирен</a>
+                                  <a href="magnus.html">
+                                    <img src="images/magnus.jpg" alt="">
+                                    Магнус <br> Карлсен</a>
+                                  <a href="anand.html">
+                                    <img src="images/anand.jpg" alt=""> 
+                                    Вишланатан Ананд</a>
+                                  <a href="kramnik.html">
+                                    <img src="images/kramnik2.png" alt="">
+                                    Владимир Крамник</a>
+                                  <a href="topalov.html">
+                                    <img src="images/topalov.jpg" alt="">
+                                    Веселин <br> Топалов</a>
+                                  <a href="kasparov.html">
+                                    <img src="images/kasparov.webp" alt="">
+                                    Гари <br> Каспаров</a>
+                                  <a href="karpov.html">
+                                    <img src="images/karpov.jpg" alt="">
+                                    Анатоли <br> Карпов</a>
+                                  <a href="fisher.html">
+                                    <img src="images/fisher.jpg" alt="">
+                                    Боби <br> Фишър</a>
+                                  <a href="#">
+                                    <img src="images/spassky.jpg" alt="">
+                                    Борис <br> Спаски</a>
+                                  <a href="#">
+                                    <img src="images/Petrosyan.jpg" alt="">
+                                    Тигран <br> Петросян</a>
+                                  <a href="#">
+                                    <img src="images/botvinik.jpg" alt="">
+                                    Михаил <br> Ботвиник</a>
+                                  <a href="#">
+                                    <img src="images/Tal.jpg" alt="">
+                                    Михаил <br> Тал</a>
+                                  <a href="#">
+                                    <img src="images/alehin.jpg" alt="">
+                                    Александър <br> Алехин</a>
+                                  <a href="#">
+                                    <img src="images/capablaka2.jpg" alt="">
+                                    Хосе <br> Капабланка</a>
+                                </div>
+                              </div>
+                        
+                        <li><a href="index-eng.html" class="link"><img src="images/icons/united-kingdom2.png" alt=""></a></li>
+                        <li><a href="index-ger.html" class="link"><img src="images/icons/german2.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="chessRules.html">Правила</a></li>
+                    <li><a href="zaMen.html">ЗА МЕН</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main map">
+        <h1>Карта на сайта</h1>
+        <h2>Начало</h2>
+        <p><a href="index.html">Начална страница</a></p>
+        <h2>Шамппиони</h2>
+        <div class="champions">
+            <a href="gukesh.html">Гукеш Дамараджу</a>
+            <a href="ding.html">Динг Лирен</a>
+            <a href="magnus.html">Магнус Карлсен</a>
+            <a href="anand.html">Вишланатан Ананд</a>
+            <a href="kramnik.html">Владимир Крамник</a>
+            <a href="topalov.html">Веселин Топалов</a>
+            <a href="kasparov.html">Гари Каспоров</a>
+            <a href="karpov.html">Анатолий Карпов</a>
+            <a href="fisher.html">Боби Фишър</a>
+        </div>
+        <h2>Правила</h2>
+        <p><a href="chessRules.html">Правилата на шахмата</a></p>
+        <h2>За мен</h2>
+        <p><a href="zaMen.html">Информация за мен</a></p>
+        <h2>Периоди</h2>
+        <div class="champions">
+            <a href="period2000.html">Период: 2000-2025г</a>
+            <a href="period1970.html">Период: 1970-2000</a>
+            <a href="period1920.html">Период: 1920-1970г</a>
+        </div>
+        <h2>Партии</h2>
+        <div class="champions">
+            <a href="gamesAttack.html">Атакуващ стил</a>
+            <a href="gamesBlack.html">Позиционен стил</a>
+            <a href="gamesPositional.html">Позиционен стил</a>
+            <a href="gamesAttack.html">Атакуващ стил</a>
+        </div>
+    </div>
+    <footer>
+        <div class="socials">
+          <a href="index.html"><img src="images/logo.png" alt="" class="logo2"></a>
+          <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100009897546689"><img src="images/icons/white-facebook-icon-png-29.jpg" alt=""></a>
+            <a href="https://www.instagram.com/a_petrovv___?igsh=MWJ3YXM5N3U1b2FmNA=="><img src="images/icons/instagram-icon-png-white-2.jpg" alt=""></a>
+            <a href="https://x.com/AndreyP96364634?t=VSfHeB2p9MVXdTBXisGC1A&s=09"><img src="images/icons/twitter-x-24.png" alt=""></a>
+            <a href="https://discord.com/"><img src="images/icons/discord-2-24.png" alt=""></a>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3>Шампиони</h3>
+          <ul>
+            <li><a href="period2000.html">Период: 2000-2025г</a></li>
+            <li><a href="period1970.html">Период: 1970-2000г</a></li>
+            <li><a href="period1920.html">Период: 1920-1970г</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3>Шахмат</h3>
+          <ul>
+            <li><a href="chessRules.html">Правила</a></li>
+            <li><a href="chessRules.html#chessboard__container">Шахматна дъска</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3>Партии</h3>
+          <ul>
+            <li><a href="gamesWhite.html">Победи с бели</a></li>
+            <li><a href="gamesBlack.html">Победи с черните</a></li>
+            <li><a href="gamesPositional.html">Позиционен стил</a></li>
+            <li><a href="gamesAttack.html">Атакуващ стил</a></li>
+          </ul>
+        </div>
+        <!-- <div class="footer__content">
+            <h3>Партии</h3>
+            <ul>
+              <li><a href="gamesWhite.html">Победи с бели</a></li>
+              <li><a href="gamesBlack.html">Победи с черните</a></li>
+              <li><a href="gamesPositional.html">Позиционен стил</a></li>
+              <li><a href="gamesAttack.html">Атакуващ стил</a></li>
+            </ul>
+          </div> -->
+      </footer>
+</body>
+</html>

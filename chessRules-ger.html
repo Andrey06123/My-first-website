@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/rules.css">
+  <link rel="stylesheet" href="css/chess.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="left">
+                <div class="header__logo">
+                    <a href="index-ger.html"><img src="images/logo.png" alt="" class="logo"></a>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="index-ger.html" class="link">STARTSEITE</a></li>
+                        
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">WELTMEISTER</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="gukesh-ger.html">
+                                    <img src="images/gukesh.jpg" alt="">
+                                    Gukesh Damaraaju</a>
+                                <a href="ding-ger.html">
+                                    <img src="images/Ding.webp" alt="">
+                                    Ding Liren</a>
+                                <a href="magnus-ger.html">
+                                    <img src="images/magnus.jpg" alt="">
+                                    Magnus Carlsen</a>
+                                <a href="anand-ger.html">
+                                    <img src="images/anand.jpg" alt=""> 
+                                    Viswanathan Anand</a>
+                                <a href="kramnik-ger.html">
+                                    <img src="images/kramnik2.png" alt="">
+                                    Vladimir Kramnik</a>
+                                <a href="topalov-ger.html">
+                                    <img src="images/topalov.jpg" alt="">
+                                    Veselin Topalov</a>
+                                <a href="kasparov-ger.html">
+                                    <img src="images/kasparov.webp" alt="">
+                                    Garry Kasparov</a>
+                                <a href="karpov-ger.html">
+                                    <img src="images/karpov.jpg" alt="">
+                                    Anatoly Karpov</a>
+                                <a href="fisher-ger.html">
+                                    <img src="images/fisher.jpg" alt="">
+                                    Bobby Fischer</a>
+                                    <a href="#">
+                                      <img src="images/spassky.jpg" alt="">
+                                      Boris <br> Spassky</a>
+                                    <a href="#">
+                                      <img src="images/Petrosyan.jpg" alt="">
+                                      Tigran <br> Petrosyan</a>
+                                    <a href="#">
+                                      <img src="images/botvinik.jpg" alt="">
+                                      Mikhail <br> Botvinnik</a>
+                                    <a href="#">
+                                      <img src="images/Tal.jpg" alt="">
+                                      Mikhail <br> Тал</a>
+                                    <a href="#">
+                                      <img src="images/alehin.jpg" alt="">
+                                      Alexander <br> Alekhine</a>
+                                    <a href="#">
+                                      <img src="images/capablaka2.jpg" alt="">
+                                      Jose <br> Capablanca</a>
+                            </div>
+                        </div>
+                        
+                        <li><a href="chessRules.html" class="link"><img src="images/icons/bulgaria5.png" alt=""></a></li>
+                        <li><a href="chessRules-eng.html" class="link"><img src="images/icons/united-kingdom2.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="chessRules-ger.html">REGELN</a></li>
+                    <li><a href="zaMen-ger.html">ÜBER MICH</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+  <div class="main_container">
+    <h1>Die Regeln der Schachs</h1>
+    <div class="pawns_container">
+        <h2>Bauern</h2>
+        <p>Bauern sind ungewöhnlich, da sie sich und schlagen auf unterschiedliche Weise: Sie ziehen vorwärts, schlagen jedoch diagonal. Bauern können sich immer nur ein Feld auf einmal bewegen, außer an ihrem ersten Zug, wenn sie zwei Felder vorwärts ziehen können. Bauern können nur gegnerische Figuren schlagen, die sich ein Feld diagonal vor ihnen befinden. Sie können sich niemals rückwärts bewegen oder schlagen. Wenn sich direkt vor einem Bauern eine andere Figur befindet, kann dieser sich nicht vorwärts bewegen oder diese Figur schlagen. Erreicht ein Bauer die gegnerische letzte Reihe, wird er in eine vom Spieler gewählte Figur umgewandelt, meist in eine Dame.</p>
+      <div class="chess_rules_container">
+        <div class="chess_moves_example">
+          <div class="square_rules white"></div>
+          <div class="square_rules black"></div>
+          <div class="square_rules white"></div>
+          <div class="square_rules black"></div>
+          <div class="square_rules white"></div>
+          <div class="square_rules black"></div>
+          <div class="square_rules white"><img src="images/pieces/white-pawn.png" alt=""></div>
+          <div class="square_rules black"><img src="images/pieces/white-pawn.png"class="pawnmove" alt=""></div>
+          <div class="square_rules white"><img src="images/pieces/white-pawn.png" alt=""></div>
+          <div class="square_rules black"><img src="images/pieces/white-bishop.png" alt=""></div>
+          <div class="square_rules white"><img src="images/pieces/white-knight.png" alt=""></div>
+          <div class="square_rules black"><img src="images/pieces/white-rook.png" alt=""></div>
+        </div>
+        <div class="chess_moves_example">
+          <div class="square_rules red"><img src="images/pieces/black-knight.png" alt=""></div>
+          <div class="square_rules black"></div>
+          <div class="square_rules red"><img src="images/pieces/black-bishop.png" alt=""></div>
+          <div class="square_rules black"></div>
+          <div class="square_rules white"><img src="images/pieces/white-pawn.png" alt=""></div>
+          <div class="square_rules black"></div>
+          <div class="square_rules white"><img src="images/pieces/white-pawn.png" alt=""></div>
+          <div class="square_rules black"></div>
+          <div class="square_rules white"><img src="images/pieces/white-pawn.png" alt=""></div>
+          <div class="square_rules black"><img src="images/pieces/white-bishop.png" alt=""></div>
+          <div class="square_rules white"><img src="images/pieces/white-knight.png" alt=""></div>
+          <div class="square_rules black"><img src="images/pieces/white-rook.png" alt=""></div>
+        </div>
+        <div class="chess_moves_example">
+          <div class="square_rules white"></div>
+          <div class="square_rules black"></div>
+          <div class="square_rules white"></div>
+          <div class="square_rules black"></div>
+          <div class="square_rules white"></div>
+          <div class="square_rules black"></div>
+          <div class="square_rules white"></div>
+          <div class="square_rules black"><img src="images/pieces/black-pawn.png" class="pawn_promote" alt=""></div>
+          <div class="square_rules white"></div>
+          <div class="square_rules black"></div>
+          <div class="square_rules white"><img src="images/pieces/black-queen.png" class="queen_promote" alt=""></div>
+          <div class="square_rules black"></div>
+        </div>
+      </div>
+      <p>Die letzte Regel bezüglich der Bauern heißt „en passant“, was auf Französisch „im Vorbeigehen“ bedeutet. Wenn ein Bauer an seinem ersten Zug zwei Felder vorrückt und auf ein Feld in derselben Reihe wie ein gegnerischer Bauer gelangt (wodurch er die Chance des Gegners zum Schlagen umgeht), hat der gegnerische Bauer die Möglichkeit, den ersten Bauern zu schlagen, als wäre er nur ein Feld vorgerückt.</p>
+      <div class="chess_moves_example">
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"><img src="images/pieces/black-pawn.png"class="enpassant-black" alt=""></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"><img src="images/pieces/white-pawn.png" alt=""></div>
+        <div class="square_rules black"><img src="images/pieces/white-pawn.png" class="enpassant"></div>
+        <div class="square_rules white"><img src="images/pieces/white-pawn.png" alt=""></div>
+        <div class="square_rules black"><img src="images/pieces/white-bishop.png" alt=""></div>
+        <div class="square_rules white"><img src="images/pieces/white-knight.png" alt=""></div>
+        <div class="square_rules black"><img src="images/pieces/white-rook.png" alt=""></div>
+      </div>
+    </div>
+    <div class="knight_container">
+        <h2>Springer</h2>
+        <p>Der Springer bewegt sich ganz anders als die anderen Figuren – zwei Felder in eine Richtung, und dann ein Feld im 90°-Winkel, wodurch er die Form eines „L“ bildet. Springer sind außerdem die einzigen Figuren, die über andere Figuren springen können.</p>
+      <div class="chess_moves_example">
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"><img src="images/pieces/white-pawn.png" alt=""></div>
+        <div class="square_rules black"><img src="images/pieces/white-pawn.png" alt=""></div>
+        <div class="square_rules white"><img src="images/pieces/white-pawn.png" alt=""></div>
+        <div class="square_rules black"><img src="images/pieces/white-bishop.png" alt=""></div>
+        <div class="square_rules white"><img src="images/pieces/white-knight.png"class="knightmove" alt=""></div>
+        <div class="square_rules black"><img src="images/pieces/white-rook.png" alt=""></div>
+      </div>
+    </div>
+    <div class="bishop_container">
+        <h2>Läufer</h2>
+        <p>Der Läufer kann sich beliebig weit bewegen, allerdings nur diagonal. Jeder Läufer beginnt auf einer Farbe (weiß oder schwarz) und bleibt stets auf dieser Farbe. Läufer ergänzen sich gut, weil sie gegenseitig ihre Schwächen abdecken.</p>
+      <div class="chess_moves_example">
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"><img src="images/pieces/white-pawn.png" alt=""></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"><img src="images/pieces/white-pawn.png" alt=""></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"><img src="images/pieces/white-pawn.png" alt=""></div>
+        <div class="square_rules black"><img src="images/pieces/white-bishop.png" class="bishopmove" alt=""></div>
+        <div class="square_rules white"><img src="images/pieces/white-knight.png" alt=""></div>
+        <div class="square_rules black"><img src="images/pieces/white-rook.png" alt=""></div>
+      </div>
+    </div>
+    <div class="rook_container">
+        <h2>Turm</h2>
+        <p>Der Turm kann sich beliebig weit bewegen, jedoch nur vorwärts, rückwärts und seitwärts. Türme sind besonders stark, wenn sie sich gegenseitig schützen und zusammenarbeiten!</p>
+      <div class="chess_moves_example">
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"><img src="images/pieces/white-rook.png" class="rookmove" alt=""></div>
+      </div>
+    </div>
+    <div class="queen_container">
+        <h2>Dame</h2>
+        <p>Die Dame ist die stärkste Figur. Sie kann sich in jede gerade Richtung bewegen – vorwärts, rückwärts, seitwärts oder diagonal – so weit wie möglich, solange sie nicht durch eigene Figuren hindurchzieht. Wie bei allen anderen Figuren endet ihr Zug, sobald sie eine gegnerische Figur schlägt.</p>
+      <div class="chess_moves_example">
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"><img src="images/pieces/white-queen.png" class="queenmove" alt=""></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+      </div>
+    </div>
+    <div class="king_container">
+        <h2>König</h2>
+        <p>Der König ist die wichtigste Figur, aber auch eine der schwächsten. Er kann sich nur um ein Feld in jede Richtung bewegen – nach oben, nach unten, seitwärts und diagonal. Der König darf niemals in Schach gezogen werden (d.h. in eine Position, in der er geschlagen werden könnte). Wenn der König von einer gegnerischen Figur angegriffen wird, nennt man das „Schach“.</p>
+      <div class="chess_moves_example">
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"><img src="images/pieces/white-king.png" class="kingmove" alt=""></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+        <div class="square_rules white"></div>
+        <div class="square_rules black"></div>
+      </div>
+    </div>
+    <div class="castle_container">
+        <h2>Rochade oder lange Rochade</h2>
+        <p>Eine weitere spezielle Regel ist die Rochade. Mit diesem Zug können Sie zwei wichtige Dinge gleichzeitig erreichen: Ihren König (hoffentlich) in Sicherheit bringen und Ihren Turm aus der Ecke ins Spiel bringen. Wenn ein Spieler am Zug ist, kann er seinen König zwei Felder zur Seite ziehen und dann den Turm aus der entsprechenden Ecke auf das Feld direkt neben den König auf der gegenüberliegenden Seite stellen. (Siehe das untenstehende Beispiel.) Außerdem müssen folgende Bedingungen erfüllt sein, um rochieren zu können: Es muss der erste Zug des Königs sein, es muss der erste Zug des Turms sein, es dürfen keine Figuren zwischen dem König und dem Turm stehen und der König darf nicht im Schach stehen oder durch ein Schachfeld ziehen.</p>
+      <div class="chess_rules_container castlerules"> 
+        <div class="chess_castle_example">
+          <div class="square_rules_castle white"></div>
+          <div class="square_rules_castle black"></div>
+          <div class="square_rules_castle white"></div>
+          <div class="square_rules_castle black"></div>
+          <div class="square_rules_castle black"><img src="images/pieces/white-pawn.png" alt=""></div>
+          <div class="square_rules_castle white"><img src="images/pieces/white-pawn.png" alt=""></div>
+          <div class="square_rules_castle black"><img src="images/pieces/white-pawn.png" alt=""></div>
+          <div class="square_rules_castle white"><img src="images/pieces/white-pawn.png" alt=""></div>
+          <div class="square_rules_castle white"><img src="images/pieces/white-king.png" class="castleking" alt=""></div>
+          <div class="square_rules_castle black"></div>
+          <div class="square_rules_castle white"></div>
+          <div class="square_rules_castle black"><img src="images/pieces/white-rook.png"class="castlerook" alt=""></div>
+        </div>
+        <div class="chess_longcastle_example">
+          <div class="square_rules_longcastle white"></div>
+          <div class="square_rules_longcastle black"></div>
+          <div class="square_rules_longcastle white"></div>
+          <div class="square_rules_longcastle black"></div>
+          <div class="square_rules_longcastle white"></div>
+          <div class="square_rules_longcastle black"><img src="images/pieces/white-pawn.png" alt=""></div>
+          <div class="square_rules_longcastle white"><img src="images/pieces/white-pawn.png" alt=""></div>
+          <div class="square_rules_longcastle black"><img src="images/pieces/white-pawn.png" alt=""></div>
+          <div class="square_rules_longcastle white"><img src="images/pieces/white-pawn.png" alt=""></div>
+          <div class="square_rules_longcastle black"><img src="images/pieces/white-pawn.png" alt=""></div>
+          <div class="square_rules_longcastle white"> <img src="images/pieces/white-rook.png" class="longcastlerook" alt=""></div>
+          <div class="square_rules_longcastle black"></div>
+          <div class="square_rules_longcastle white"></div>
+          <div class="square_rules_longcastle black"></div>
+          <div class="square_rules_longcastle white"><img src="images/pieces/white-king.png" class="longcastleking" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <h2 class="chessboard_text">Probieren Sie aus, was Sie gelernt haben</h2>
+    <div class="chessboard__container lower" id="chessboard__container">
+      <div class="chessboard" id="chessboard">
+          <div class="square white">
+            <div class="piece rook" id="bR2">
+              <img src="images/pieces/black-rook.png" alt="">
+            </div>
+          </div>
+          <div class="square black">
+            <div class="piece knight" id="bN2">
+              <img src="images/pieces/black-knight.png" alt="">
+            </div>
+          </div>
+          <div class="square white">
+            <div class="piece bishop" id="bB2">
+              <img src="images/pieces/black-bishop.png" alt="">
+            </div>
+          </div>
+          <div class="square black">
+            <div class="piece queen" id="bQ">
+              <img src="images/pieces/black-queen.png" alt="">
+            </div>
+          </div>
+          <div class="square white">
+            <div class="piece king" id="bK">
+              <img src="images/pieces/black-king.png" alt="">
+            </div>
+          </div>
+          <div class="square black">
+            <div class="piece bishop" id="bB1">
+              <img src="images/pieces/black-bishop.png" alt="">
+            </div>
+          </div>
+          <div class="square white">
+            <div class="piece knight" id="bN1">
+              <img src="images/pieces/black-knight.png" alt="">
+            </div>
+          </div>
+          <div class="square black">
+            <div class="coordinate white__text rank">8</div>
+            <div class="piece rook" id="bR1">
+              <img src="images/pieces/black-rook.png" alt="">
+            </div>
+          </div>
+      
+          <div class="square black">
+            <div class="piece pawn" id="bP8">
+              <img src="images/pieces/black-pawn.png" alt="">
+            </div>
+          </div>
+          <div class="square white">
+            <div class="piece pawn" id="bP7">
+              <img src="images/pieces/black-pawn.png" alt="">
+            </div>
+          </div>
+          <div class="square black">
+            <div class="piece pawn" id="bP6">
+              <img src="images/pieces/black-pawn.png" alt="">
+            </div>
+          </div>
+          <div class="square white">
+            <div class="piece pawn" id="bP5">
+              <img src="images/pieces/black-pawn.png" alt="">
+            </div>
+          </div>
+          <div class="square black">
+            <div class="piece pawn" id="bP4">
+              <img src="images/pieces/black-pawn.png" alt="">
+            </div>
+          </div>
+          <div class="square white">
+            <div class="piece pawn" id="bP3">
+              <img src="images/pieces/black-pawn.png" alt="">
+            </div>
+          </div>
+          <div class="square black">
+            <div class="piece pawn" id="bP2" >
+              <img src="images/pieces/black-pawn.png" alt="">
+            </div>
+          </div>
+          <div class="square white">
+            <div class="coordinate black__text rank">7</div>
+            <div class="piece pawn" id="bP1">
+              <img src="images/pieces/black-pawn.png" alt="">
+            </div>
+          </div>
+      
+          <div class="square white"></div>
+          <div class="square black"></div>
+          <div class="square white"></div>
+          <div class="square black"></div>
+          <div class="square white"></div>
+          <div class="square black"></div>
+          <div class="square white"></div>
+          <div class="square black">
+            <div class="coordinate white__text rank">6</div>
+          </div>
+      
+          <div class="square black"></div>
+          <div class="square white"></div>
+          <div class="square black"></div>
+          <div class="square white"></div>
+          <div class="square black"></div>
+          <div class="square white"></div>
+          <div class="square black"></div>
+          <div class="square white">
+            <div class="coordinate black__text rank">5</div>
+          </div>
+      
+          <div class="square white"></div>
+          <div class="square black"></div>
+          <div class="square white"></div>
+          <div class="square black"></div>
+          <div class="square white"></div>
+          <div class="square black"></div>
+          <div class="square white"></div>
+          <div class="square black">
+            <div class="coordinate white__text rank">4</div>
+          </div>
+      
+          <div class="square black"></div>
+          <div class="square white"></div>
+          <div class="square black"></div>
+          <div class="square white"></div>
+          <div class="square black"></div>
+          <div class="square white"></div>
+          <div class="square black"></div>
+          <div class="square white">
+            <div class="coordinate black__text rank">3</div>
+          </div>
+      
+          <div class="square white">
+            <div class="piece pawn" id="wP8">
+              <img src="images/pieces/white-pawn.png" alt="">
+            </div>
+          </div>
+          <div class="square black">
+            <div class="piece pawn" id="wP7">
+              <img src="images/pieces/white-pawn.png" alt="">
+            </div>
+          </div>
+          <div class="square white">
+            <div class="piece pawn" id="wP6">
+              <img src="images/pieces/white-pawn.png" alt="">
+            </div>
+          </div>
+          <div class="square black">
+            <div class="piece pawn" id="wP5">
+              <img src="images/pieces/white-pawn.png" alt="">
+            </div>
+          </div>
+          <div class="square white">
+            <div class="piece pawn" id="wP4">
+              <img src="images/pieces/white-pawn.png" alt="">
+            </div>
+          </div>
+          <div class="square black">
+            <div class="piece pawn" id="wP3">
+              <img src="images/pieces/white-pawn.png" alt="">
+            </div>
+          </div>
+          <div class="square white">
+            <div class="piece pawn" id="wP2">
+              <img src="images/pieces/white-pawn.png" alt="">
+            </div>
+          </div>
+          <div class="square black">
+            <div class="coordinate white__text rank">2</div>
+            <div class="piece pawn" id="wP1">
+              <img src="images/pieces/white-pawn.png" alt="">
+            </div>
+          </div>
+      
+          <div class="square black">
+            <div class="coordinate white__text">a</div>
+            <div class="piece rook" id="wR2">
+              <img src="images/pieces/white-rook.png" alt="">
+            </div>
+          </div>
+          <div class="square white">
+            <div class="coordinate black__text">b</div>
+            <div class="piece knight" id="wN2">
+              <img src="images/pieces/white-knight.png" alt="">
+            </div>
+          </div>
+          <div class="square black">
+            <div class="coordinate white__text">c</div>
+            <div class="piece bishop" id="wB2">
+              <img src="images/pieces/white-bishop.png" alt="">
+            </div>
+          </div>
+          <div class="square white">
+            <div class="coordinate black__text">d</div>
+            <div class="piece queen" id="wQ">
+              <img src="images/pieces/white-queen.png" alt="">
+            </div>
+          </div>
+          <div class="square black">
+            <div class="coordinate white__text">e</div>
+            <div class="piece king" id="wK">
+              <img src="images/pieces/white-king.png" alt="">
+            </div>
+          </div>
+          <div class="square white">
+            <div class="coordinate black__text">f</div>
+            <div class="piece bishop" id="wB1">
+              <img src="images/pieces/white-bishop.png" alt="">
+            </div>
+          </div>
+          <div class="square black">
+            <div class="coordinate white__text">g</div>
+            <div class="piece knight" id="wN1">
+              <img src="images/pieces/white-knight.png" alt="">
+            </div>
+          </div>
+          <div class="square white">
+            <div class="coordinate black__text">h</div>
+            <div class="coordinate black__text rank" >1</div>
+            <div class="piece rook" id="wR1">
+              <img src="images/pieces/white-rook.png" alt="">
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+<footer>
+    <div class="socials">
+        <a href="chessRules-ger.html"><img src="images/logo.png" alt="" class="logo2"></a>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100009897546689"><img src="images/icons/white-facebook-icon-png-29.jpg" alt=""></a>
+            <a href="https://www.instagram.com/a_petrovv___?igsh=MWJ3YXM5N3U1b2FmNA=="><img src="images/icons/instagram-icon-png-white-2.jpg" alt=""></a>
+            <a href="https://x.com/AndreyP96364634?t=VSfHeB2p9MVXdTBXisGC1A&s=09"><img src="images/icons/twitter-x-24.png" alt=""></a>
+            <a href="https://discord.com/"><img src="images/icons/discord-2-24.png" alt=""></a>
+        </div>
+    </div>
+    <div class="footer__content">
+        <h3>Champions</h3>
+        <ul>
+            <li><a href="period2000.html">Zeitraum: 2000-2025</a></li>
+            <li><a href="period1970.html">Zeitraum: 1970-2000</a></li>
+            <li><a href="period1920.html">Zeitraum: 1920-1970</a></li>
+        </ul>
+    </div>
+    <div class="footer__content">
+        <h3>Schach</h3>
+        <ul>
+            <li><a href="chessRules-ger.html">Regeln</a></li>
+            <li><a href="chessRules-ger.html#chessboard__container">Schachbrett</a></li>
+        </ul>
+    </div>
+    <div class="footer__content">
+        <h3>Spiele</h3>
+        <ul>
+            <li><a href="gamesWhite.html">Siege mit Weiß</a></li>
+            <li><a href="gamesBlack.html">Siege mit Schwarz</a></li>
+            <li><a href="gamesPositional.html">Positionsspiel</a></li>
+            <li><a href="gamesAttack.html">Angriffsstil</a></li>
+        </ul>
+    </div>
+</footer>
+<script src="resusrsni-failove/chess_game.js"></script>
+</body>
+</html>
